@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BookCoverImage" representedClassName="BookCoverImage" syncable="YES">
+        <attribute name="cover_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="referenceCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="BookList" representedClassName="BookList" syncable="YES">
+        <attribute name="bookList" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CachedBook" representedClassName="CachedBook" syncable="YES">
+        <attribute name="bookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiredDate" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="CachedSearchResults" representedClassName="CachedSearchResults" syncable="YES">
+        <attribute name="expiredDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchResults" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="DetailedBookInfo" representedClassName="DetailedBookInfo" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cover_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isbn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lib_info" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="order_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publish" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="query_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="referenceCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BookList" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="CachedBook" positionX="-54" positionY="9" width="128" height="73"/>
+        <element name="CachedSearchResults" positionX="-36" positionY="36" width="128" height="90"/>
+        <element name="DetailedBookInfo" positionX="-18" positionY="63" width="128" height="210"/>
+        <element name="BookCoverImage" positionX="0" positionY="144" width="128" height="88"/>
+    </elements>
+</model>

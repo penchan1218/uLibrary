@@ -1,0 +1,22 @@
+//
+//  uLibrary-Prefix.pch
+//  uLibrary
+//
+//  Created by 陈颖鹏 on 15/3/2.
+//  Copyright (c) 2015年 UniqueStudio. All rights reserved.
+//
+
+#ifndef uLibrary_uLibrary_Prefix_pch
+#define uLibrary_uLibrary_Prefix_pch
+
+#define UIColorFromRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define THEME_GREEN UIColorFromRGBA(76, 220, 99, 1.0)
+
+#define IPHONE6_SCREEN [[UIScreen mainScreen] bounds].size.width==375
+#define IPHONE6P_SCREEN [[UIScreen mainScreen] bounds].size.width==414
+#define IPHONE4S_SCREEN [[UIScreen mainScreen] bounds].size.height==480
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
